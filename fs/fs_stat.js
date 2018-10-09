@@ -1,5 +1,5 @@
 const fs = require('fs')
-// stat 检测文件类型
+// stat 检测文件类型 (异步操作)
 fs.stat(`${__dirname}/directory`, (err, stats) => {
   if(err){
     console.log(err);
