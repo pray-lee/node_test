@@ -12,6 +12,7 @@ readStream.on('end', () => {
   console.log(str)
 })
 
+
 readStream.on('error', (err) => {
   console.log(err);
 })
