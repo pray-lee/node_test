@@ -27,7 +27,7 @@ const app = http.createServer((req, res) => {
             return
           }else {
             res.writeHead('404', {'Content-Type': ''+contentType+';charset="utf-8"'})
-            res.write(data.toString())
+            res.write(data)
             res.end()
           }
         })
