@@ -2,7 +2,6 @@ const http = require('http')
 const url = require('url')
 const ejs = require('ejs')
 const port = process.env.PORT || 3000
-
 http.createServer((req, res) => {
   let pathname = url.parse(req.url).pathname
   if(req.url !== '/favicon.ico'){
@@ -21,7 +20,6 @@ http.createServer((req, res) => {
   }else{
     res.end()
   }
-
 }).listen(port, () => {
   console.log(`server is running at port ${port}`)
 })
