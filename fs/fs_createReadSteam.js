@@ -1,6 +1,6 @@
 const fs = require('fs')
 
-let readStream = fs.createReadStream(`${__dirname}/file.txt`, 'utf-8')
+let readStream = fs.createReadStream(`${__dirname}/file.txt`)
 
 let str = ''
 
